@@ -10,6 +10,6 @@ class MainViewModel : ViewModel() {
         get() = _text
 
     fun onTextUpdated(s: CharSequence) {
-        if (_text.value != null) _text.value = s.toString()
+        _text.value = s.toString()
     }
 }
